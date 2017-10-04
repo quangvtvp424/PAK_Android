@@ -1,0 +1,16 @@
+practice 1:
+
+1. make itent with Dial action
+2. make intent and intent-filter for SEND action after that using share in sms to see your app appear in list app share able
+3. Switch activity with intent, pass data from login -> welcome screen.
+-----
+Activity:
+
+1. Show log to see lifecycle
+2. Answer questions:
+What happen when:
+- Click Home
+- Pull down notification
+- show all task
+- show dialog
+- Incoming call
