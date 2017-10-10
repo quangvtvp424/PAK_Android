@@ -1,4 +1,4 @@
-package com.ptit.pak_android_course.lesson03;
+package com.ptit.pak_android_course.lesson03.day1;
 
 import android.app.Activity;
 import android.os.Bundle;

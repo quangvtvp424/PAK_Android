@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.ptit.pak_android_course">
+    package="com.ptit.pak_android_course">
 
     <application
         android:allowBackup="true"
@@ -9,26 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lesson03.MainActivity">
+        <activity android:name=".lesson03.day2.boundservice.BoundServiceActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".lesson03.WelcomeActivity">
+        <activity android:name=".lesson03.day1.WelcomeActivity">
             <intent-filter>
-                <action android:name="android.intent.action.SEND"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="text/plain"/>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
 
             </intent-filter>
         </activity>
-        <activity android:name=".lesson03.DialogActivity"
-                  android:theme="@style/Theme.AppCompat.Dialog"
-            />
+        <activity
+            android:name=".lesson03.day1.DialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
 
+        <service android:name=".lesson03.day2.startedservice.StartedServiceBasic" />
+        <service android:name=".lesson03.day2.startedservice.StartedServiceCreatingNewThread" />
+        <service android:name=".lesson03.day2.boundservice.BoundService" />
     </application>
 
 </manifest>

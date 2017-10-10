@@ -1,10 +1,8 @@
-package com.ptit.pak_android_course.lesson03;
+package com.ptit.pak_android_course.lesson03.day1;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
