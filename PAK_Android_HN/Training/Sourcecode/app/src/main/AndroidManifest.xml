@@ -10,11 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".lesson03.day2.boundservice.BoundServiceActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity android:name=".lesson04.day1.Lesson04Activity">
+
         </activity>
 
         <activity android:name=".lesson03.day1.WelcomeActivity">
@@ -32,6 +31,14 @@
         <service android:name=".lesson03.day2.startedservice.StartedServiceBasic" />
         <service android:name=".lesson03.day2.startedservice.StartedServiceCreatingNewThread" />
         <service android:name=".lesson03.day2.boundservice.BoundService" />
+        <activity android:name=".lesson04.day2.AbtractionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>
