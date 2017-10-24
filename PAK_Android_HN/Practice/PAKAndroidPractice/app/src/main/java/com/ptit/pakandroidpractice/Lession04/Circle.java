@@ -3,7 +3,7 @@ package com.ptit.pakandroidpractice.Lession04;
 import android.util.Log;
 
 /**
- * Created by bomng on 10/24/2017.
+ * Created by bomng on 10/24/2017.dd
  */
 
 public class Circle  extends Shape {

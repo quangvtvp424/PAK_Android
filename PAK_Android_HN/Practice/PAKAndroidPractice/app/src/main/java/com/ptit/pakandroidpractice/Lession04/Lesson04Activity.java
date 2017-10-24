@@ -7,7 +7,7 @@ import com.ptit.pakandroidpractice.R;
 
 import java.util.ArrayList;
 import java.util.Random;
-
+//dd
 public class Lesson04Activity extends AppCompatActivity {
 
     @Override
