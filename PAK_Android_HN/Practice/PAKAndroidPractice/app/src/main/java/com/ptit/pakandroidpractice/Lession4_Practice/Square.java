@@ -1,4 +1,4 @@
-package com.ptit.pakandroidpractice.Lession04;
+package com.ptit.pakandroidpractice.Lession4_Practice;
 
 import android.util.Log;
 
@@ -6,21 +6,22 @@ import android.util.Log;
  * Created by bomng on 10/24/2017.dd
  */
 
-public class Rectangle extends Shape {
+public class Square extends Shape {
     private double weight;
-    private double height;
 
-    public Rectangle(double weight, double height) {
+    public Square(double weight) {
         this.weight = weight;
-        this.height = height;
     }
     private final String TAG = getClass().getSimpleName();
 
 
     @Override
     public double calArea() {
-        double res = weight*height;
+        double res = weight*weight;
         Log.d(TAG, "calArea: "+ res);
         return res;
     }
+
 }
+
+

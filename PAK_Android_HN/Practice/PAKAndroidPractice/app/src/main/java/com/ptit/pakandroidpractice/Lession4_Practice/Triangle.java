@@ -1,4 +1,4 @@
-package com.ptit.pakandroidpractice.Lession04;
+package com.ptit.pakandroidpractice.Lession4_Practice;
 
 import android.util.Log;
 

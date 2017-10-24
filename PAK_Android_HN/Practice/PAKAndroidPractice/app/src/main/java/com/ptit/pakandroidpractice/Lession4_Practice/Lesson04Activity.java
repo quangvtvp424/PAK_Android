@@ -1,4 +1,4 @@
-package com.ptit.pakandroidpractice.Lession04;
+package com.ptit.pakandroidpractice.Lession4_Practice;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,7 @@ import com.ptit.pakandroidpractice.R;
 
 import java.util.ArrayList;
 import java.util.Random;
+
 //dd
 public class Lesson04Activity extends AppCompatActivity {
 
