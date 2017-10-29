@@ -32,7 +32,7 @@
         <service android:name=".lesson03.day2.startedservice.StartedServiceBasic" />
         <service android:name=".lesson03.day2.startedservice.StartedServiceCreatingNewThread" />
         <service android:name=".lesson03.day2.boundservice.BoundService" />
-        <activity android:name=".lesson05.FragmentLayoutActivity">
+        <activity android:name=".lesson05.simplefragment.MyFragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
