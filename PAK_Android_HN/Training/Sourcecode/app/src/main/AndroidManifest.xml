@@ -40,7 +40,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".lesson05.ArticleDetailActivity"/>
+        <activity android:name=".lesson05.dynamic.layout.ArticleDetailActivity"/>
     </application>
 
 </manifest>

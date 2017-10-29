@@ -1,4 +1,4 @@
-package com.ptit.pak_android_course.lesson05;
+package com.ptit.pak_android_course.lesson05.dynamic.layout;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

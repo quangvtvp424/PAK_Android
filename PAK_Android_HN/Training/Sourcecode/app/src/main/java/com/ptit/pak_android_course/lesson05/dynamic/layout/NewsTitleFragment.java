@@ -1,9 +1,8 @@
-package com.ptit.pak_android_course.lesson05;
+package com.ptit.pak_android_course.lesson05.dynamic.layout;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.ListFragment;
 import android.view.View;
@@ -67,20 +66,6 @@ public class NewsTitleFragment extends ListFragment {
             ft.replace(R.id.fragment_detail, details);
             ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
             ft.commit();
-//        }
-
-//        if (getActivity().getSupportFragmentManager().findFragmentById(R.id.fragment_detail) != null) {
-//            ArticleDetailFragment details = (ArticleDetailFragment)
-//                    getActivity().getSupportFragmentManager().findFragmentById(R.id.fragment_detail);
-//
-//                details = ArticleDetailFragment.newInstance(currentArticleIndex);
-//
-//                // Execute a transaction, replacing any existing fragment
-//                // with this one inside the frame.
-//                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
-//                ft.replace(R.id.fragment_detail, details);
-//                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-//                ft.commit();
         } else {
             Intent intent = new Intent();
             intent.setClass(getActivity(), ArticleDetailActivity.class);

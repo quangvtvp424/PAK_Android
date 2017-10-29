@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/fragment_titles"
-        class="com.ptit.pak_android_course.lesson05.NewsTitleFragment"
+        class="com.ptit.pak_android_course.lesson05.dynamic.layout.NewsTitleFragment"
         android:layout_width="0px"
         android:layout_height="match_parent"
         android:layout_weight="1" />
