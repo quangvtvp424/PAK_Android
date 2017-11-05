@@ -21,7 +21,7 @@ public class ContentFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-//        View view = inflater.inflate(R.layout.fragment_content, container, false);
+//        View view = inflater.inflate(R.layout.fragment_welcome, container, false);
 //        txtContent = (TextView) view.findViewById(R.id.txt_content);
         webView = new WebView(getActivity());
         return webView;
