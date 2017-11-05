@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PAKAndroidPractice.iml" filepath="$PROJECT_DIR$/PAKAndroidPractice.iml" />
+      <module fileurl="file://C:\Users\Mon\AndroidStudioProjects\PAK\PAK_Android\PAK_Android_HN\Practice\PAKAndroidPractice\PAKAndroidPractice.iml" filepath="C:\Users\Mon\AndroidStudioProjects\PAK\PAK_Android\PAK_Android_HN\Practice\PAKAndroidPractice\PAKAndroidPractice.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Mon\AndroidStudioProjects\PAK\PAK_Android\PAK_Android_HN\Practice\PAKAndroidPractice\app\app.iml" filepath="C:\Users\Mon\AndroidStudioProjects\PAK\PAK_Android\PAK_Android_HN\Practice\PAKAndroidPractice\app\app.iml" />
     </modules>
   </component>
 </project>
