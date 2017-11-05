@@ -15,4 +15,5 @@ public class MainActivity extends AppCompatActivity {
     public void Test(){
         Log.d("test", "Test: ");
     }
+    //Hoang Anh
 }
