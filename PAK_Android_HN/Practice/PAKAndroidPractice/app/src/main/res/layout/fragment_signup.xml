@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292F47"
+    tools:context="com.ptit.pakandroidpractice.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/txvSignup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sign up"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/txvQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="WHO YOU ARE?"
+        android:textColor="#7F84A2"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txvSignup"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/avaVAnh"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/avaHung" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/avaVAnh"
+        android:src="@drawable/v_anh_ava"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFF"
+        app:layout_constraintRight_toLeftOf="@+id/avaKhai"
+        app:layout_constraintTop_toBottomOf="@+id/txvQuestion"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="-203dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineLeft" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/avaKhai"
+        android:src="@drawable/khai_ava"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFF"
+        app:layout_constraintRight_toLeftOf="@+id/avaNam"
+        app:layout_constraintLeft_toRightOf="@+id/avaVAnh"
+        app:layout_constraintBottom_toBottomOf="@+id/avaVAnh"
+        android:layout_marginBottom="0dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/avaNam"
+        android:src="@drawable/nam_ava"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:civ_border_color="#FFF"
+        app:civ_border_width="2dp"
+        app:layout_constraintRight_toLeftOf="@+id/avaHung"
+        app:layout_constraintLeft_toRightOf="@+id/avaKhai"
+        app:layout_constraintBottom_toBottomOf="@+id/avaKhai"
+        android:layout_marginBottom="0dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/avaHung"
+        android:src="@drawable/hung_ava"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFF"
+        app:layout_constraintLeft_toRightOf="@+id/avaNam"
+        app:layout_constraintBottom_toBottomOf="@+id/avaNam"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineRight"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp" />
+
+    <TextView
+        android:id="@+id/txvVAnh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="V.Anh"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/avaVAnh"
+        app:layout_constraintRight_toRightOf="@+id/avaVAnh"
+        app:layout_constraintLeft_toLeftOf="@+id/avaVAnh"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/txvKhai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Khai"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/avaKhai"
+        app:layout_constraintRight_toRightOf="@+id/avaKhai"
+        app:layout_constraintLeft_toLeftOf="@+id/avaKhai"
+        android:layout_marginTop="4dp"
+        app:layout_constraintHorizontal_bias="0.518" />
+
+    <TextView
+        android:id="@+id/txvNam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Nam"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/avaNam"
+        app:layout_constraintRight_toRightOf="@+id/avaNam"
+        app:layout_constraintLeft_toLeftOf="@+id/avaNam"
+        android:layout_marginTop="4dp"
+        app:layout_constraintHorizontal_bias="0.44" />
+
+    <TextView
+        android:id="@+id/txvHung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hung"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/avaHung"
+        app:layout_constraintRight_toRightOf="@+id/avaHung"
+        app:layout_constraintLeft_toLeftOf="@+id/avaHung"
+        android:layout_marginTop="4dp"
+        app:layout_constraintHorizontal_bias="0.476" />
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/editTextStyle"
+        android:drawableLeft="@drawable/icon_user"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/txvVAnh"
+        app:layout_constraintBottom_toTopOf="@+id/edtEmail"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="64dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/editTextStyle"
+        android:drawableLeft="@drawable/icon_email"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsername"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="64dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginRight="64dp" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/editTextStyle"
+        android:drawableLeft="@drawable/icon_lock"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/edtConfirmPw"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="64dp"
+        app:layout_constraintHorizontal_bias="0.502"
+        android:layout_marginRight="64dp" />
+
+    <EditText
+        android:id="@+id/edtConfirmPw"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/editTextStyle"
+        android:drawableLeft="@drawable/icon_lock"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+        android:layout_marginRight="64dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignUp" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/btnSignUp"
+        android:text="SignUp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/txvHaveAcc"
+        android:layout_marginLeft="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="64dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txvHaveAcc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingRight="4dp"
+        android:textStyle="italic"
+        android:text="Already have an account."
+        android:textSize="17sp"
+        android:textColor="#dce1fb"
+        android:textAlignment="viewEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/txvLoginHere"
+        android:layout_marginRight="0dp" />
+
+    <TextView
+        android:id="@+id/txvLoginHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="6dp"
+        android:textSize="17sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:text="Login here"
+        android:textStyle="italic"
+        android:layout_marginRight="64dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvHaveAcc" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineRight"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.86" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineLeft"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.14" />
+
+</android.support.constraint.ConstraintLayout>

@@ -8,4 +8,22 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="editTextStyle">
+        <item name="android:background">@drawable/edt_drawable</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#7F84A2</item>
+        <item name="android:textColorHint">#7F84A2</item>
+    </style>
+
+    <style name="btnSignUp">
+        <item name="android:background">@drawable/btnsignup_drawable</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>
