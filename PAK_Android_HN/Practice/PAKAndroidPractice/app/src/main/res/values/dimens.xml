@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_padding">20px</dimen>
+    <dimen name="margin_components">10px</dimen>
+    <dimen name="text_color_size">40px</dimen>
+    <dimen name="layout_linear">70px</dimen>
+</resources>
