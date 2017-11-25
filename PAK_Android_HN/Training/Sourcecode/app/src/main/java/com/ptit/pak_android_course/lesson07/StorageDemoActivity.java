@@ -9,6 +9,14 @@ import android.widget.Switch;
 
 import com.ptit.pak_android_course.R;
 
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 /**
  * Created by Thuannd on 11/25/2017.
  */
@@ -44,8 +52,10 @@ public class StorageDemoActivity extends Activity {
 
     private void saveSetting(){
         SharedPreferences preferences = this.getSharedPreferences(PREF_SETTING, Context.MODE_PRIVATE);
-        preferences.edit().putBoolean(KEY_PREF_ROAMING, swRoaming.isChecked()).apply();
-        preferences.edit().putBoolean(KEY_PREF_WIFI, swWifi.isChecked()).apply();
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putBoolean(KEY_PREF_ROAMING, swRoaming.isChecked());
+        editor.putBoolean(KEY_PREF_WIFI, swWifi.isChecked());
+        editor.apply();
     }
 
     private void restoreSetting(){
@@ -55,5 +65,38 @@ public class StorageDemoActivity extends Activity {
 
         swRoaming.setChecked(isRoaming);
         swWifi.setChecked(isWifiOn);
+    }
+
+    private void saveFileToInternal(){
+        File file = new File(getFilesDir(), "cache");
+        String data = "text to save";
+        FileOutputStream outputStream;
+        try {
+            outputStream = new FileOutputStream(file);
+            outputStream.write(data.getBytes());
+            outputStream.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private String readFromFile(){
+        File file = new File(getFilesDir(), "cache");
+        FileInputStream fin;
+        String temp="";
+        try {
+            fin = new FileInputStream(file);
+            int c;
+            while( (c = fin.read()) != -1){
+                temp = temp + Character.toString((char)c);
+            }
+            fin.close();
+        } catch (FileNotFoundException e) {
+            // error handling
+        } catch (IOException e) {
+            // error handling
+        }
+
+        return temp;
     }
 }
