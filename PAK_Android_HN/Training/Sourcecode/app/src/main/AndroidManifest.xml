@@ -3,6 +3,8 @@
 
     package="com.ptit.pak_android_course">
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,7 +34,8 @@
         <service android:name=".lesson03.day2.startedservice.StartedServiceBasic" />
         <service android:name=".lesson03.day2.startedservice.StartedServiceCreatingNewThread" />
         <service android:name=".lesson03.day2.boundservice.BoundService" />
-        <activity android:name=".lesson07.StorageDemoActivity">
+        <activity android:name=".lesson07.StorageDemoActivity"/>
+        <activity android:name=".lesson08.ActivityLocationLess08">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
