@@ -35,7 +35,8 @@
         <service android:name=".lesson03.day2.startedservice.StartedServiceCreatingNewThread" />
         <service android:name=".lesson03.day2.boundservice.BoundService" />
         <activity android:name=".lesson07.StorageDemoActivity"/>
-        <activity android:name=".lesson08.ActivityLocationLess08">
+        <activity android:name=".lesson08.ActivityLocationLess08"/>
+        <activity android:name=".lesson08.MapsActivityLess08">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,6 +45,10 @@
 
         </activity>
         <activity android:name=".lesson05.dynamic.layout.ArticleDetailActivity"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBgJB2DpnjciKEG_uu6yijw9xY8CCi-7Ls" />
     </application>
 
 </manifest>
