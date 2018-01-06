@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ptit.pak_android_course">
 
+    package="com.ptit.pak_android_course">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -31,7 +34,9 @@
         <service android:name=".lesson03.day2.startedservice.StartedServiceBasic" />
         <service android:name=".lesson03.day2.startedservice.StartedServiceCreatingNewThread" />
         <service android:name=".lesson03.day2.boundservice.BoundService" />
-        <activity android:name=".lesson04.day2.AbtractionActivity">
+        <activity android:name=".lesson07.StorageDemoActivity"/>
+        <activity android:name=".lesson08.ActivityLocationLess08"/>
+        <activity android:name=".lesson08.MapsActivityLess08">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,6 +44,11 @@
             </intent-filter>
 
         </activity>
+        <activity android:name=".lesson05.dynamic.layout.ArticleDetailActivity"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBgJB2DpnjciKEG_uu6yijw9xY8CCi-7Ls" />
     </application>
 
 </manifest>
