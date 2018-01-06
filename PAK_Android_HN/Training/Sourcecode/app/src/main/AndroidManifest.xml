@@ -36,7 +36,7 @@
         <service android:name=".lesson03.day2.boundservice.BoundService" />
         <activity android:name=".lesson07.StorageDemoActivity"/>
         <activity android:name=".lesson08.ActivityLocationLess08"/>
-        <activity android:name=".lesson08.MapsActivityLess08">
+        <activity android:name=".lesson10.MultiThreadActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
