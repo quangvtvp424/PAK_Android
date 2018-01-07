@@ -1,11 +1,14 @@
 package com.ptit.pak_android_course.lesson10;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -62,20 +65,34 @@ public class MultiThreadActivity extends Activity implements View.OnClickListene
     }
 
     private void workWithAsyncTask(){
-        new MyAsyncTask().execute("http://...");
+        new MyAsyncTask(this).execute("http://...");
     }
 
     private class MyAsyncTask extends AsyncTask<String, Void, String>{
 
+        ProgressDialog progressBar;
+
+        public MyAsyncTask(Context context){
+            progressBar = new ProgressDialog(context);
+            progressBar.setMessage("Downloading...");
+        }
+
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+            progressBar.show();
+            // show loading progress
         }
 
         @Override
         protected String doInBackground(String... strings) {
             // get data from server
             // heavy jobs here
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             return "data";
         }
 
@@ -83,6 +100,8 @@ public class MultiThreadActivity extends Activity implements View.OnClickListene
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             displayData(s);
+            progressBar.dismiss();
+            // dismiss progress
         }
 
         @Override
