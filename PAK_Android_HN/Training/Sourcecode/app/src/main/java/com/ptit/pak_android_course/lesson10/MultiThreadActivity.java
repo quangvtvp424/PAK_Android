@@ -51,6 +51,12 @@ public class MultiThreadActivity extends Activity implements View.OnClickListene
                         txtMsg.setText(data);
                     }
                 });
+//                txtMsg.post(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        txtMsg.setText(data);
+//                    }
+//                });
             }
         }).start();
     }
@@ -76,12 +82,17 @@ public class MultiThreadActivity extends Activity implements View.OnClickListene
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
+            displayData(s);
         }
 
         @Override
         protected void onCancelled() {
             super.onCancelled();
         }
+    }
+
+    public void displayData(String data){
+        txtMsg.setText(data);
     }
 
     private void getDataFromServerUsingRetrofit(){
@@ -99,7 +110,7 @@ public class MultiThreadActivity extends Activity implements View.OnClickListene
 
             @Override
             public void onFailure(Call<EmployeeList> call, Throwable t) {
-                Toast.makeText(MultiThreadActivity.this, "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MultiThreadActivity.this, "Things went wrong..", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -119,7 +130,8 @@ public class MultiThreadActivity extends Activity implements View.OnClickListene
                 workWithRunable();
                 break;
             case R.id.btnRetrofit:
-                getDataFromServerUsingRetrofit();
+//                getDataFromServerUsingRetrofit();
+                workWithAsyncTask();
                 break;
             default:
                 break;
