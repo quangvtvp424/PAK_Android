@@ -149,8 +149,8 @@ public class MultiThreadActivity extends Activity implements View.OnClickListene
                 workWithRunable();
                 break;
             case R.id.btnRetrofit:
-//                getDataFromServerUsingRetrofit();
-                workWithAsyncTask();
+                getDataFromServerUsingRetrofit();
+//                workWithAsyncTask();
                 break;
             default:
                 break;
