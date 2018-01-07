@@ -44,6 +44,8 @@ public class MultiThreadActivity extends Activity implements View.OnClickListene
         btnGetDataFromServerByRetrofit.setOnClickListener(this);
         loaddingBar = new ProgressDialog(this);
         loaddingBar.setMessage("Downloading...");
+        // modify code for new branch
+
     }
 
     private void workWithRunable() {
@@ -84,7 +86,6 @@ public class MultiThreadActivity extends Activity implements View.OnClickListene
         protected void onPreExecute() {
             super.onPreExecute();
             progressBar.show();
-            // show loading progress
         }
 
         @Override
