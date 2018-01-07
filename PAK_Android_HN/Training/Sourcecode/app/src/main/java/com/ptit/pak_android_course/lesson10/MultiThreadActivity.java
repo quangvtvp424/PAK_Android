@@ -31,6 +31,7 @@ public class MultiThreadActivity extends Activity implements View.OnClickListene
     public TextView txtMsg;
     public Button btnGetDataFromServer;
     public Button btnGetDataFromServerByRetrofit;
+    public ProgressDialog loaddingBar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -41,6 +42,8 @@ public class MultiThreadActivity extends Activity implements View.OnClickListene
         btnGetDataFromServer.setOnClickListener(this);
         btnGetDataFromServerByRetrofit = (Button) this.findViewById(R.id.btnRetrofit);
         btnGetDataFromServerByRetrofit.setOnClickListener(this);
+        loaddingBar = new ProgressDialog(this);
+        loaddingBar.setMessage("Downloading...");
     }
 
     private void workWithRunable() {
@@ -120,16 +123,18 @@ public class MultiThreadActivity extends Activity implements View.OnClickListene
 
         /*Call the method with parameter in the interface to get the employee data*/
         Call<EmployeeList> call = service.getEmployeeData(100);
-
+        loaddingBar.show();
         call.enqueue(new Callback<EmployeeList>() {
             @Override
             public void onResponse(Call<EmployeeList> call, Response<EmployeeList> response) {
                 displayListOfEmployee(response.body().getEmployeeArrayList());
+                loaddingBar.dismiss();
             }
 
             @Override
             public void onFailure(Call<EmployeeList> call, Throwable t) {
                 Toast.makeText(MultiThreadActivity.this, "Things went wrong..", Toast.LENGTH_SHORT).show();
+                loaddingBar.dismiss();
             }
         });
     }
