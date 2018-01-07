@@ -86,7 +86,6 @@ public class MultiThreadActivity extends Activity implements View.OnClickListene
         protected void onPreExecute() {
             super.onPreExecute();
             progressBar.show();
-            // show loading progress
         }
 
         @Override
